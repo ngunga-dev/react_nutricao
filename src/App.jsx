@@ -23,22 +23,20 @@ function App() {
   return (
     <div className="container">
       <header>
-      <h1>Dicas de Nutrição</h1>
+        <h1>Dicas de Nutrição</h1>
       </header>
 
-      {
-        nutri.map((item,index) => (
-          <article key={index} className="post">
-            <strong className='titulo'>{item.titulo}</strong>
+      {nutri.map((item, index) => (
+        <article key={index} className="post">
+          <strong className="titulo">{item.titulo}</strong>
 
-            <img src={item.capa} alt={item.titulo} className="capa" />
-            <p className='subtitulo'>
-              {item.subtitulo}
-            </p>
-            <a className='butao'> Acessar</a>
-          </article>
-        ))
-      }
+          <img src={item.capa} alt={item.titulo} className="capa" />
+          <p className="subtitulo">{item.subtitulo}</p>
+          <a className="butao" href="https://dicasdenutricao.vercel.app/">
+            Acessar
+          </a>
+        </article>
+      ))}
     </div>
   );
 }
