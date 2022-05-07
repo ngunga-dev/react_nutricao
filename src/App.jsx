@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="container">
       <header>
-      <h1>React Nutrição</h1>
+      <h1>Dicas de Nutrição</h1>
       </header>
 
       {
